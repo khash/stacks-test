@@ -1,0 +1,10 @@
+staging:
+    domain: 
+        name: "ubuntu@ec2-50-17-11-45.compute-1.amazonaws.com"
+        ssh_options:
+            "-i /Users/khashsajadi/.ssh/cldblx-test.pem"
+    deploy_to: "/var/deploy/stacks"
+    repository: "https://github.com/khash/stacks-test.git"
+    branch: "master"
+    rake_env:
+        RAILS_ENV: 'production'
