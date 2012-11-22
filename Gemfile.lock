@@ -39,7 +39,6 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.17.2)
-    mysql2 (0.3.11)
     polyglot (0.3.3)
     rack (1.2.4)
     rack-mount (0.6.14)
@@ -70,5 +69,4 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  mysql2 (~> 0.3.11)
   rails (= 3.0.3)
