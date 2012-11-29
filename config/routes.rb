@@ -13,6 +13,8 @@ Stacks::Application.routes.draw do
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
 
+  match 'test', :to => 'test#index', :via => :get
+  
   # Sample resource route with options:
   #   resources :products do
   #     member do
