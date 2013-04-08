@@ -7,7 +7,7 @@ listen 8081, :tcp_nopush => true
 
 timeout 30
 
-pid File.join(ENV['RAILS_STACK_PATH'], 'tmp', 'pids', 'web_server.pid')
+pid File.join('tmp', 'web_server.pid')
 
 stderr_path "#{ENV['RAILS_STACK_PATH']}/log/unicorn.stderr.log"
 stdout_path "#{ENV['RAILS_STACK_PATH']}/log/unicorn.stdout.log"
