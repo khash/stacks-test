@@ -1,14 +1,16 @@
 worker_processes 2
 
-working_directory "#{ENV['RAILS_ROOT']}"
+working_directory "#{ENV['RAILS_STACK_PATH']}"
 
 listen "/tmp/web_server.sock", :backlog => 64
 listen 8081, :tcp_nopush => true
 
 timeout 30
 
-stderr_path "#{ENV['RAILS_ROOT']}/log/unicorn.stderr.log"
-stdout_path "#{ENV['RAILS_ROOT']}/log/unicorn.stdout.log"
+pid File.join(ENV['RAILS_STACK_PATH'], 'tmp', 'pids', 'web_server.pid')
+
+stderr_path "#{ENV['RAILS_STACK_PATH']}/log/unicorn.stderr.log"
+stdout_path "#{ENV['RAILS_STACK_PATH']}/log/unicorn.stdout.log"
 
 preload_app true
 GC.respond_to?(:copy_on_write_friendly=) and
