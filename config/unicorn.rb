@@ -19,7 +19,7 @@ GC.respond_to?(:copy_on_write_friendly=) and
 check_client_connection false
 
 before_fork do |server, worker|
-	old_pid = RAILS_ROOT + '/tmp/web_server.pid.oldbin'
+	old_pid = '/tmp/web_server.pid.oldbin'
 	if File.exists?(old_pid) && server.pid != old_pid
 		begin
 			Process.kill("QUIT", File.read(old_pid).to_i)
