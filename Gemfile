@@ -2,8 +2,6 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.3'
 
-gem 'unicorn'
-
 gem 'memcache-client'
 
 # Bundle edge Rails instead:
