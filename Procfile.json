@@ -2,16 +2,16 @@
 	{
 		"name" : "w1",
 		"command" : "bundle exec rake test:work $RAILS_ENV",
-		"deploy_group" : "a"
+		"restart_group" : "a"
 	},
 	{
 		"name" : "w2",
 		"command" : "bundle exec rake test:work $RACK_ENV",
-		"deploy_group" : "a"
+		"restart_group" : "a"
 	},
 	{
 		"name" : "w3",
 		"command" : "bundle exec rake test:work $TESTER",
-		"deploy_group" : "b1"
+		"restart_group" : "b1"
 	}
 ]
