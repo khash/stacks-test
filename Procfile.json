@@ -12,6 +12,6 @@
 	{
 		"name" : "w3",
 		"command" : "bundle exec rake test:work $TESTER",
-		"deploy_group" : "b"
+		"deploy_group" : "b1"
 	}
 ]
