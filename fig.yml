@@ -1,5 +1,5 @@
 web:
-  build: .
+  image: khash/simple_web
   command: bundle exec rackup -p 3000
   volumes:
     - .:/myapp
