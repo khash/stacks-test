@@ -5,3 +5,9 @@ web:
     - .:/myapp
   ports:
     - "3000:3000"
+db:
+  image: jpetazzo/pgsql
+  type: db
+  db_type: postgres
+  ports:
+    - "5432:5432"
