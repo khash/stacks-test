@@ -8,9 +8,9 @@ web:
 db:
   image: jpetazzo/pgsql
   type: db
-  db_type: postgres
+  db_type: mysql
   ports:
-    - "5432:5432"
+    - "3306:3306"
 node:
   image: khash/node
   ports:
