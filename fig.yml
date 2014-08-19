@@ -11,7 +11,7 @@ db:
   db_type: postgres
   ports:
     - "5432:5432"
-faye:
-  image: khash/faye
+node:
+  image: khash/node
   ports:
-    - "8080:8080"
+    - "1337:1337"
