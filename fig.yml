@@ -13,5 +13,6 @@ db:
     - "3306:3306"
 node:
   image: khash/node
+  command: node test.js
   ports:
     - "1337:1337"
