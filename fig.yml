@@ -6,7 +6,7 @@ web:
   ports:
     - "3000:3000"
 db:
-  image: jpetazzo/pgsql
+  image: jpetazzo/mysql
   type: db
   db_type: mysql
   ports:
