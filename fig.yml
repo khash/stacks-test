@@ -16,3 +16,4 @@ node:
   command: node test.js
   ports:
     - "1337:1337"
+  web_ports: "8080:"
