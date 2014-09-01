@@ -4,6 +4,8 @@ gem 'rails', '3.0.3'
 
 gem 'memcache-client'
 
+gem 'rails_12factor', group: :production
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
