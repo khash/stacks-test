@@ -3,7 +3,6 @@ production:
     web:
       git: http://github.com/khash/stacks-test.git
       branch: buildgrid
-      docker_file: .
       command: bundle exec rackup -p 3000
       # build_command: bundle exec rake db:create
       # deploy_command: bundle exec rake db:migrate
