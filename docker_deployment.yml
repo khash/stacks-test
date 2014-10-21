@@ -1,0 +1,17 @@
+production:
+  services:
+    web:
+      git: http://github.com/khash/stacks-test.git
+      branch: buildgrid
+      docker_file: .
+      command: bundle exec rackup -p 3000
+      # build_command: bundle exec rake db:create
+      # deploy_command: bundle exec rake db:migrate
+      log_folder: /myapp/log
+      local_ports:
+        - 3000
+      public_port: "80:443"
+      pre_start_signal: "USR1"
+      pre_stop_sequence: "1m:USR2:30s:USR1:50s"
+      stop_grace: "30s"
+      capture_stdout_stderr: true
